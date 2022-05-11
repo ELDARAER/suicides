@@ -39,14 +39,14 @@ def get_data_HR():
 
 HR=get_data_HR()
 
-@st.cache
-def get_data_masterdata(allow_output_mutation=True):
+@st.cache(allow_output_mutation=True)
+def get_data_masterdata():
     return pd.read_csv("https://raw.githubusercontent.com/SovBakoid/suicides/main/suicide_data/master.csv")
 
 masterdata=get_data_masterdata()
 
-@st.cache
-def get_data_ISO(allow_output_mutation=True):
+@st.cache(allow_output_mutation=True)
+def get_data_ISO():
     return pd.read_csv("https://raw.githubusercontent.com/lukes/ISO-3166-Countries-with-Regional-Codes/master/all/all.csv")
 
 ISO = get_data_ISO()
