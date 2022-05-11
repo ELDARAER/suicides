@@ -585,3 +585,15 @@ with st.echo(code_location='below'):
             st.info("А если вы все-таки оскорбитесь за подобную шутку, не относящуюся к контексту учебы, мне придет за это дисциплинарка?")
             if st.checkbox("Обещаю, что нет!"):
                 st.image(image2, caption='ИЗВИНИТЕ')
+
+    st.subheader("Использованные источники")
+
+    st.write("""
+    https://www.kaggle.com/datasets/russellyates88/suicide-rates-overview-1985-to-2016\n
+    https://www.kaggle.com/datasets/twinkle0705/mental-health-and-suicide-rates\n
+    https://www.youtube.com/watch?v=yZYQpge1W5s&t=3482s\n
+    https://www.kaggle.com/datasets/tjysdsg/gender-inequality-index\n
+    https://www.kaggle.com/datasets/andradaolteanu/country-mapping-iso-continent-region\n
+    https://www.kaggle.com/datasets/nitishabharathi/gdp-per-capita-all-countries\n
+    https://vt.tiktok.com/ZSdHjJ71B/?k=1
+    """)
