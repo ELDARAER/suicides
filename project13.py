@@ -13,7 +13,7 @@ from io import BytesIO
 import altair as alt
 import seaborn as sns
 import matplotlib.pyplot as plt
-
+import urllib.request
 
 @st.cache
 def get_data_agestandart():
@@ -311,7 +311,7 @@ corcoeffornurses=np.corrcoef(f1f1, f2f2)
 
 
 st.write("""
-Из всех проффесий только доля медсестер показывает значительную корреляцию, а именно 0.7591, как видно на картинке ниже.
+Из всех проффесий только доля медсестер показывает значительную корреляцию, а именно 0.5648, как видно на картинке ниже.
 """)
 
 st.write(corcoeffornurses)
@@ -338,9 +338,9 @@ st.write("""
 
 @st.cache(allow_output_mutation=True)
 def vido():
-    return open("/Users/eldaraer/Desktop/suicide_data/Jorgi.mp4", "rb")
+    return urllib.request.urlretrieve("https://github.com/SovBakoid/suicides/raw/main/suicide_data/Jorgi.mp4", "Jordan Peterson Completely Destroys Feminist Narrative.mp4")
 
-video1=vido()
+video1, something_else=vido()
 
 st.video(video1)
 
