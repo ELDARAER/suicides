@@ -16,7 +16,6 @@ import matplotlib.pyplot as plt
 import urllib.request
 
 with st.echo(code_location='below'):
-
     @st.cache
     def get_data_agestandart():
         return pd.read_csv("https://raw.githubusercontent.com/SovBakoid/suicides/main/suicide_data/Agestandardized_suicide_rates.csv")
